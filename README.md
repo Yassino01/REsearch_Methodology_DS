@@ -20,13 +20,31 @@ f_Incomplete_Gesture_Data_to_Interface_Collaborative_Robots)
 
 Pour des raisons de simplicité, on se limitera dans un premier temps au sous-dataset Static Gesture. 
 
+## Analyses des données :
+
 Voici les classes des gestes disponibles dans le dataset :
 
 <p align="center">
-  <img src="gesture/figures/hesture_classes.png" width="700" title = "Static gestures" >
+  <img src="gestures/figures/hesture_classes.png" width="700" title = "Static gestures" >
 </p>
 
 Il y a plusieurs utilisateurs, avec plusieurs mesures par exemple, ce qui pose des problèmes dont il faudra tenir compte. Il n’y a pas de découpage train/test fourni dans le dataset
+
+Nous pouvons classifier les données en 8 classes pour l’utilisateur et en 24 classes pour le type de mouvement. 
+
+Nous allons commencer par analyser les données et notamment leur répartition par rapport à ces class.
+
+<p align="center">
+  <img src="gestures/figures/hist_mouv.png" width="600" title = "Répartition des gestes " >
+</p>
+
+
+Et la répartition des gestes par utilisateur.
+
+<p align="center">
+  <img src="gestures/figures/nb_exemple_par_user.png" width="600" title = "Répartition des gestes " >
+</p>
+
 
 ## Mise en œuvre d’un projet Machine Learning: 
  * chargement 
