@@ -1,7 +1,15 @@
 # Static Hand Gestures : 
 
-Etude de **classification** de geste à travers la lecture, la compréhension, et la proposition de modèles et de protocole d’évaluation.
+## Contexte : Mise en œuvre d’un projet Machine Learning: 
+ * chargement 
+ * exploration
+ * prétraitements
+ * formalisation de la tâche,
+ * choix des modèles et des méthodes
+ * définition d’un protocole de test et d’évaluation de performances.
 
+
+Etude de **classification** de geste à travers la lecture, la compréhension, et la proposition de modèles et de protocole d’évaluation.
 
 ## Datasets :
 
@@ -143,15 +151,15 @@ Nous avons donc réalisé une campagne d’expérience pour évaluer ce modèle 
 ##### undersampling/oversampling :
 
 <p align="center">
-  <img src="gestures/figures/brut.png" width="700" title = "Résultats sur données brutes  " >
+  <img src="gestures/figures/brut.png" width="430" title = "Résultats sur données brutes  " >
 </p>
 
 <p align="center">
-  <img src="gestures/figures/under.png" width="700" title = "Résultats avec undersampling" >
+  <img src="gestures/figures/under.png" width="430" title = "Résultats avec undersampling" >
 </p>
 
 <p align="center">
-  <img src="gestures/figures/over.png" width="700" title = "Résultats oversampling " >
+  <img src="gestures/figures/over.png" width="430" title = "Résultats oversampling " >
 </p>
 
 ##### Comparaison des modèles simples :
@@ -162,13 +170,13 @@ brutes normalisées et on over-sample les folds d’entraînement afin d’avoir
 Le tableau 2.5 montre les résultats obtenus pour différents modèles.
 
 <p align="center">
-  <img src="gestures/figures/simples.png" width="1300" title = "Résultats des modèles simples avec oversampling" >
+  <img src="gestures/figures/simples.png" width="1000" title = "Résultats des modèles simples avec oversampling" >
 </p>
 
 La figure 2.1 correspond à la matrice de confusion obtenue en test par notre meilleur modèle simple(régression logistique). Le taux de classification semble être très bon et le nombre de faux-positifs/faux-négatifs est minime.
 
 <p align="center">
-  <img src="gestures/figures/conf_matrix.png" width="940" title = "Matrice de confusion Logistic Regression" >
+  <img src="gestures/figures/conf_matrix.png" width="1200" title = "Matrice de confusion Logistic Regression" >
 </p>
 
 
@@ -177,7 +185,7 @@ La figure 2.1 correspond à la matrice de confusion obtenue en test par notre me
 nombre de composantes) Les résultats sont meilleurs que sur les modèles simples.
 
 <p align="center">
-  <img src="gestures/figures/set_methods.png" width="1300" title = "Résultats des méthodes d'ensembles" >
+  <img src="gestures/figures/set_methods.png" width="1000" title = "Résultats des méthodes d'ensembles" >
 </p>
 
 Un GridSearch sur l’ensemble des modèles ainsi que sur plusieurs paramètres nous indique qu’un modèle de type **RandomForest** renvoie les meilleurs résultats.
@@ -194,7 +202,7 @@ Pour cela, nous allons seulement garder les features les plus discriminantes. Le
 
 
 <p align="center">
-  <img src="gestures/figures/features.png" width="940" title = "Feature importance for RandomForest" >
+  <img src="gestures/figures/features.png" width="700" title = "Feature importance for RandomForest" >
 </p>
 
 
@@ -204,11 +212,7 @@ Pour cela, nous allons seulement garder les features les plus discriminantes. Le
 
 * Augmenter le nombre de features au-delà de 7 n’augmente pas le score de façon significative.
 
-## Mise en œuvre d’un projet Machine Learning: 
- * chargement 
- * exploration
- * prétraitements
- * formalisation de la tâche,
- * choix des modèles et des méthodes
- * définition d’un protocole de test et d’évaluation de performances.
+#### Compagne d'expériance ANN :
+
+...
 
